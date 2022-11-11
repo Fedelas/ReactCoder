@@ -1,0 +1,23 @@
+     .item{
+        margin: 1em;
+        justify-content: center;
+     }  
+     
+     .item-image-continer{
+        height:500px;
+        width: 500px;
+     }
+     
+
+     img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+       }
+     
+    .item-content{
+        width: 600px; 
+    }   
+    .item-title{
+        object-fit: contain;
+    }
