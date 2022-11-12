@@ -1,34 +1,57 @@
 import "../styles.css"
 import React from "react"
-import CartWidget from  "../components/CartWidget"
+import CartWidget from "../components/CartWidget"
+import { NavLink } from "react-router-dom";
 function NavBar() {
-  return(
-    <nav className="nav">
-        <a href="" className="logo">MEMORY</a>
-        <ul>
-            <li>
-                <a>Accesories</a>
-            </li>
-            <li>
-                <a>Shirts and Blousers </a>
-            </li>
-            <li>
-                <a>Sweatshirts & Hoodies</a>
-            </li>
-            <li>
-                <a>Jackets and Coats</a>
-            </li>
-            <li>
-                <a>Trousers and Leggings</a>
-            </li>
-            <li>
-                <a>Shoes and Boots</a>
-            </li>
-        </ul>
-        <CartWidget/>
-        
-    </nav>
-  )
+    return (
+        <nav className="nav">
+            <NavLink to="/" >
+                <a href="" className="logo">MEMORY</a>
+            </NavLink>
+
+            <ul>
+                <li>
+                    <NavLink to="/category/men" style={({ isActive }) => ({
+                        fontWeight: isActive ? 'bold' : 'normal'
+                    })}>
+                        Men
+                    </NavLink>
+
+                </li>
+                <li>
+                    <NavLink to="/category/women" style={({ isActive }) => ({
+                        fontWeight: isActive ? 'bold' : 'normal'
+                    })}>
+                        Women
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/category/electronics" style={({ isActive }) => ({
+                        fontWeight: isActive ? 'bold' : 'normal'
+                    })}>
+                        Electronics
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/category/jewelery" style={({ isActive }) => ({
+                        fontWeight: isActive ? 'bold' : 'normal'
+                    })}>
+                        Jewelery
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/category/funStuff" style={({ isActive }) => ({
+                        fontWeight: isActive ? 'bold' : 'normal'
+                    })}>
+                        FunStuff
+                    </NavLink>
+                </li>
+
+            </ul>
+            <CartWidget />
+
+        </nav>
+    )
 }
 
 export default NavBar

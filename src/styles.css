@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    text-decoration: none;
+    
 }
 
 .body{
@@ -58,4 +60,20 @@
 .nav ul li{
     display: inline-block;
     padding: 0 4rem;
+    text-decoration: none;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  padding: 3em;
+
+}
+
+.list-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3em;
 }
