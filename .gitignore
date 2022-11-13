@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
-/nuevoRepositorio
+# quite nuevoRepositorio porque me estaba dando problemas
+/nuevoRepositorio 
