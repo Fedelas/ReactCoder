@@ -1,23 +1,32 @@
-     .item{
+    .card{
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      align-items: center;
+      margin: 0 75px;
+      
+    }
+    
+    .item{
         margin: 1em;
         justify-content: center;
      }  
      
-     .item-image-continer{
-        height:500px;
-        width: 500px;
+     .item-image-container{
+        height:700px;
+        
      }
      
 
-     img {
+     .item-image {
         height: 100%;
-        width: 100%;
         object-fit: contain;
+        align-items: center;
        }
      
-    .item-content{
-        width: 600px; 
-    }   
+       
     .item-title{
         object-fit: contain;
+        font-size: 50px;
+        text-transform: uppercase;
     }

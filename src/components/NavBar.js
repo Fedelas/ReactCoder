@@ -1,6 +1,6 @@
 import "../styles.css"
 import React from "react"
-import CartWidget from "../components/CartWidget"
+import CartWidget from "../components/CartWidget/CartWidget"
 import { NavLink } from "react-router-dom";
 function NavBar() {
     return (
@@ -25,6 +25,9 @@ function NavBar() {
                         Women
                     </NavLink>
                 </li>
+                
+                {/*
+                
                 <li>
                     <NavLink to="/category/electronics" style={({ isActive }) => ({
                         fontWeight: isActive ? 'bold' : 'normal'
@@ -45,7 +48,7 @@ function NavBar() {
                     })}>
                         FunStuff
                     </NavLink>
-                </li>
+                </li>*/}
 
             </ul>
             <CartWidget />
